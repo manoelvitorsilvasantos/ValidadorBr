@@ -10,5 +10,5 @@ package br.app.validate.documentsBr;
  * @author mvictor
  */
 public interface CNPJ {
-    public abstract boolean isCNPJValid(final String campo, final String regex);
+    public abstract boolean isCNPJValid(final String campo);
 }

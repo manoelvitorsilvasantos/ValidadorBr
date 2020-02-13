@@ -11,6 +11,5 @@ package br.app.validate.documentsBr;
  */
 public interface GENERAL {
     public abstract boolean isEmpty(final String campo, final String mascara);
-    public abstract boolean isNull(final String campo);
-    public abstract boolean isRight(final String campo, final String mascara);
+    public abstract boolean isRight(final String campo, final String regex);
 }

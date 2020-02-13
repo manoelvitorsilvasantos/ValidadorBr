@@ -10,5 +10,5 @@ package br.app.validate.documentsBr;
  * @author mvictor
  */
 public interface CPF {
-    public abstract boolean isCPFValid(final String campo, final String regex);
+    public abstract boolean isCPFValid(final String campo);
 }

@@ -10,5 +10,5 @@ package br.app.validate.documentsBr;
  * @author mvictor
  */
 public interface RG {
-    public abstract boolean isRGValid(final String campo, final String regex);
+    public abstract boolean isRGValid(final String campo);
 }
