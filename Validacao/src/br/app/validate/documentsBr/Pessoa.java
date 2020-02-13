@@ -9,7 +9,7 @@ package br.app.validate.documentsBr;
  *
  * @author mvictor
  */
-public final class Pessoa implements CNPJ, CPF, CT, GENERAL, RG{
+public final class Pessoa implements CNPJ, CPF, CT, General, RG{
     
     private static volatile Pessoa instancia;
     private final static Object MONITOR = new Object();

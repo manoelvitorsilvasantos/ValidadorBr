@@ -9,7 +9,7 @@ package br.app.validate.documentsBr;
  *
  * @author mvictor
  */
-public interface GENERAL {
+public interface General {
     public abstract boolean isEmpty(final String campo, final String mascara);
     public abstract boolean isRight(final String campo, final String regex);
     public abstract boolean isRepeted(final String campo, final int tam, final String vetor[]);

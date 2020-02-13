@@ -1,7 +1,6 @@
 package br.app.validate.master;
 
 
-import br.app.validate.documentsBr.CPF;
 import br.app.validate.documentsBr.Pessoa;
 
 /*
