@@ -9,7 +9,6 @@ package br.app.validate.data;
  *
  * @author mvictor
  */
-public interface ICEP {
-    public abstract boolean isValidCep(final String Campo);
-    public abstract boolean isEmpty(final String Campo, final String mascara);
+public interface IEmail {
+    public abstract boolean isValidEmail(String Campo);
 }

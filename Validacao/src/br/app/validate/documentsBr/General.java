@@ -9,7 +9,7 @@ package br.app.validate.documentsBr;
  *
  * @author mvictor
  */
-public class General implements IGeneral{
+public final class General implements IGeneral{
     
     
     private static volatile General instancia;
@@ -35,12 +35,12 @@ public class General implements IGeneral{
     }
 
     @Override
-    public boolean isValid(String Campo, String Expressao) {
+    public final boolean isValid(final String Campo, final String Expressao) {
         return Campo.matches(Expressao);
     }
 
     @Override
-    public boolean isEmpty(String Campo, String Mascara) {
+    public final boolean isEmpty(final String Campo, final String Mascara) {
        return Campo.equals(Mascara);
     }
     

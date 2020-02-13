@@ -12,11 +12,14 @@ import java.util.regex.Pattern;
  *
  * @author mvictor
  */
-public class CEP implements ICEP{
+public final class CEP implements ICEP{
 
     private static volatile CEP instancia = null;
-    private static final String CEP = "\\d{2}.\\d{3}-\\d{3}";
+    private final static Object MONITOR = new Object();
+    
+    private static final String cepRegex = "\\d{2}.\\d{3}-\\d{3}";
 
+    
     public CEP()
     {
         super();
@@ -24,26 +27,21 @@ public class CEP implements ICEP{
     
     public static CEP getInstancia()
     {
-        if(instancia == null)
-        {
-            synchronized(CEP.class)
-            {
-                if(instancia == null)
-                {
-                    instancia = new CEP();
-                }
+        synchronized (MONITOR) {
+            if (instancia == null) {
+                instancia = new CEP();
             }
         }
         return instancia;
     }
     
     @Override
-    public boolean isValidCep(String Campo) {
-        return Campo.matches(CEP);
+    public final boolean isValidCep(final String Campo){
+        return Campo.matches(cepRegex);
     }
 
     @Override
-    public boolean isEmpty(String Campo, String mascara) {
+    public boolean isEmpty(final String Campo, final String mascara) {
         return Campo.equals(mascara);
     }
     

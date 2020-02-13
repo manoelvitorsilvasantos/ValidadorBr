@@ -11,7 +11,7 @@ package br.app.validate.documentsBr;
  */
 public interface IGeneral {
     //verifica se a expressão é compatível com o valor digitado no campo.
-    public abstract boolean isValid(String Campo, String Expressao);
+    public abstract boolean isValid(final String Campo, final String Expressao);
     //verifica se o campo é compatível com a mascara.
-    public abstract boolean isEmpty(String Campo, String Mascara);
+    public abstract boolean isEmpty(final String Campo, final String Mascara);
 }

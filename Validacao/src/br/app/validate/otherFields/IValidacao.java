@@ -11,7 +11,7 @@ package br.app.validate.otherFields;
  */
 public interface IValidacao {
     //verifica se o campo é válido.
-    public abstract boolean isEmpty(String Campo);
+    public abstract boolean isEmpty(final String Campo);
     //verifica se o campo é nulo.
-    public abstract boolean isNull(String Campo);
+    public abstract boolean isNull(final String Campo);
 }
