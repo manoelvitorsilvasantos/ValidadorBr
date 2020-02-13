@@ -12,4 +12,5 @@ package br.app.validate.data;
 public interface ICEP {
     public abstract boolean isValidCep(final String Campo);
     public abstract boolean isEmpty(final String Campo, final String mascara);
+    public abstract boolean isRepeted(final String campo);
 }

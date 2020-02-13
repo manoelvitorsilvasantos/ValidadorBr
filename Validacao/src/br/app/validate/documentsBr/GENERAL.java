@@ -12,4 +12,5 @@ package br.app.validate.documentsBr;
 public interface GENERAL {
     public abstract boolean isEmpty(final String campo, final String mascara);
     public abstract boolean isRight(final String campo, final String regex);
+    public abstract boolean isRepeted(final String campo, final int tam, final String vetor[]);
 }

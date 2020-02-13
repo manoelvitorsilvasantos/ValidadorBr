@@ -11,4 +11,5 @@ package br.app.validate.data;
  */
 public interface IData {
     public abstract boolean isDateValid(String campo);
+    public abstract boolean isRepeted(String campo);
 }

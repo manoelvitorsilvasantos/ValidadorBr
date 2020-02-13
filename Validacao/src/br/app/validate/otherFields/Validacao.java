@@ -42,5 +42,5 @@ public final class Validacao implements IValidacao{
     public boolean isNull(final String Campo) {
         return Campo == null;
     }
-    
+
 }

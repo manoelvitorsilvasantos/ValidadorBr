@@ -62,4 +62,16 @@ public final class Pessoa implements CNPJ, CPF, CT, GENERAL, RG{
         return campo.matches("\\d{2}.\\d{3}.\\d{3}-\\d{1}");
     }
 
+    @Override
+    public boolean isRepeted(String campo, int tam, String[] vetor) {
+        String[] array = vetor;
+        for (String valor : array) {
+            if (campo.equals(vetor) || campo.length()!= tam) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }
