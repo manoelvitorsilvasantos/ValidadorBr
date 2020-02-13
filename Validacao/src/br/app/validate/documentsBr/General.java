@@ -12,7 +12,7 @@ package br.app.validate.documentsBr;
 public class General implements IGeneral{
     
     
-    private static General instancia;
+    private static volatile General instancia;
     
     public General()
     {

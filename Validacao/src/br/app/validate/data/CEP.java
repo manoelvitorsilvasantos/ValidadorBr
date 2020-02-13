@@ -14,11 +14,9 @@ import java.util.regex.Pattern;
  */
 public class CEP implements ICEP{
 
-    private static CEP instancia = null;
-    private static final String CEP = "^\\d{2}\\.";
-    private static Pattern pattern;
-    private Matcher matcher;
-    
+    private static volatile CEP instancia = null;
+    private static final String CEP = "\\d{2}.\\d{3}-\\d{3}";
+
     public CEP()
     {
         super();
@@ -41,7 +39,7 @@ public class CEP implements ICEP{
     
     @Override
     public boolean isValidCep(String Campo) {
-        return Campo.matches("\\d{2}.\\d{3}-\\d{3}");
+        return Campo.matches(CEP);
     }
 
     @Override
