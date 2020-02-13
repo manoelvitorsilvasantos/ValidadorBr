@@ -1,8 +1,8 @@
 package br.app.validate.master;
 
 
-import br.app.validate.documentsBr.CPF;
-import br.app.validate.documentsBr.Pessoa;
+import br.app.validacao.documentos.CPF;
+import br.app.validacao.documentos.Pessoa;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
